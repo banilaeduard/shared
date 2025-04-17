@@ -18,9 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\EntityDto\EntityDto.csproj" />
     <ProjectReference Include="..\ProjectKeys\ProjectKeys.csproj" />
-    <ProjectReference Include="..\Services\ServiceInterface.csproj" />
+    <ProjectReference Include="..\ServiceInterface\ServiceInterface.csproj" />
   </ItemGroup>
 
 </Project>
