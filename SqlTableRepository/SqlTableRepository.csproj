@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Configurations>Debug;Release;DebugProdSRV</Configurations>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Dapper" Version="2.1.35" />
+    <PackageReference Include="Microsoft.ServiceFabric" Version="10.1.2175" />
+    <PackageReference Include="System.Memory.Data" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj" />
+    <ProjectReference Include="..\EntityDto\EntityDto.csproj" />
+    <ProjectReference Include="..\ProjectKeys\ProjectKeys.csproj" />
+    <ProjectReference Include="..\RepositoryContract\RepositoryContract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ProductCodes\" />
+  </ItemGroup>
+
+</Project>
