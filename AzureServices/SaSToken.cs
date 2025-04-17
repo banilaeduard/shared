@@ -1,7 +1,6 @@
 ﻿using Azure.Data.Tables;
 using Azure.Storage.Blobs;
 using Azure.Storage.Sas;
-using EntityDto.Reports;
 using ProjectKeys;
 using System.Text;
 

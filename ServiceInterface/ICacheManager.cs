@@ -1,8 +1,6 @@
-﻿using EntityDto;
-
-namespace ServiceInterface
+﻿namespace ServiceInterface
 {
-    public interface ICacheManager<T> where T : ITableEntryDto
+    public interface ICacheManager<T> where T : new()
     {
         Task<IList<T>> GetAll(Func<DateTimeOffset, IList<T>> getContent, string? tableName = null);
 
